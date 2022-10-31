@@ -10,14 +10,14 @@ namespace Loops
     {
         public  Febnocii(int n)
         {
-            int a = 0, b = 1, t;
-            for(int i = 0; i <= n; i++)
+            int a = 0, b = 1, t=0 ;
+            Console.Write("Febnocii Series upto n:    are.....:-  ");
+            for (int i = 0; i <= n; i++)
             {
                 t = a + b;
                 a = b;
                 b = t;
-                Console.WriteLine("Febnocii Series upto n: {0}   are.....", n, t);
-
+                Console.Write("\t"+t);
             }
         }
     }
